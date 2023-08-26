@@ -1,0 +1,79 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.offer{
+    text-align: center;
+    margin-bottom: 200px;
+
+    .sub-header{
+        color: $red;
+    }
+
+    .description{
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .items{
+        display: flex;
+        gap: 40px;
+        margin-top: 100px;
+
+        .item{
+            
+            border: 1px solid $red;
+            padding: 30px;
+            flex: 1;
+
+            img{
+                width: 50px;
+                height: 50px;
+                margin-bottom: 30px;
+            }
+
+            h5{
+                font-family: "armalite";
+            }
+            p{
+                text-align: justify;
+                margin-top: 20px !important;
+                font-weight: bold;
+            }
+
+            ul{
+                list-style: none;
+                margin-top: 20px !important;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+    .album{
+        margin-top: 200px;
+    }
+}
+
+@include for-Extra-Small-devices {       
+    .offer .items {
+        flex-direction: column;
+    }
+
+}
+
+@include for-Small-devices {   
+    .offer .items {
+        flex-direction: column;
+    }
+
+}
+
+
+
+@include for-Medium-devices {
+    .offer .items {
+        flex-direction: column;
+    }
+
+}
+

@@ -1,0 +1,136 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+    .socjal-icons{
+        display: flex;
+     
+        gap: 20px;
+        justify-content: center;
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}
+
+.bg-body-tertiary {
+    background-color: transparent !important;
+}
+
+.logo{
+    position: unset !important;
+    width: 250px !important;
+    height: auto !important;
+}
+
+.me-auto {
+    margin-right: auto !important;
+    margin-left: auto;
+}
+
+#navbarTogglerDemo03{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+    li {
+        a{
+            color: white;
+            font-family: 'armalite';
+            font-size: 25px;
+            letter-spacing: 3px;
+            padding: 0px 20px;
+
+            &:hover{
+                color: $red;
+            }
+
+            &:focus{
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+.navbar-toggler {
+    border:none !important;
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+ 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+
+
+@include for-Extra-Small-devices {   
+    .collapse:not(.show) {
+        display: none !important;
+      }
+
+      header{
+        .logo{
+            width: 170px !important;
+        }
+
+        .socjal-icons{
+            display: none;
+        }
+
+        .navbar-nav li a {
+         text-align: center;
+        }
+
+      }
+
+}
+
+
+@include for-Small-devices {   
+    .collapse:not(.show) {
+        display: none !important;
+    }
+
+    header{
+      .socjal-icons{
+        display: none;
+    }
+}
+
+}
+
+
+@include for-Medium-devices {   
+    .collapse:not(.show) {
+        display: none !important;
+    }
+
+    header{
+        .socjal-icons{
+          display: none;
+      }
+}
+}
+
+
+@include for-Large-devices {   
+    .navbar-nav li a {
+        font-size: 21px;
+    }
+}

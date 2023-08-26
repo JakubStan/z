@@ -1,0 +1,186 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.hero{
+    background-image: url('../../../public/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center; 
+
+    &::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.48);
+        z-index: 1;
+        content: '';
+    }
+
+
+    &__content{
+        color: white;
+        z-index: 3;
+        position: absolute;
+        bottom: 25%;
+        left: 0;
+        right: 0;
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    &__buttons{
+        margin-top: 40px;
+        gap: 20px;
+        display: flex;
+        border: 1px;
+     
+    }
+
+    .btn{
+        color: white;
+        border-radius: 0;
+        font-size: 20px;
+        border-style: solid;
+        padding: 10px 40px;
+        font-weight: 700;    
+    
+
+        &--red{
+            background-color: $red;
+            background-color: $red;
+        }
+
+        &--white{
+            border-color: white;
+    
+
+            &:hover{
+                background: white;                
+                color: $red;
+            }
+        }
+    }
+
+
+    &__icons{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -230px;
+
+        .box{
+            background-color: $red;
+            color: white;
+            z-index: 3;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 20px;
+            width: 330px;
+            height: 300px;
+
+            h3{
+                font-family: "armalite";
+            }
+
+            img{
+                width: 80px;
+                height: 80px;
+                margin: 0px 60px;
+            }
+
+            p{  
+                text-align: justify;
+            }
+        }
+    }
+}
+.mobile{
+    display: none ;
+  }
+
+
+@include for-Extra-Small-devices{
+    .hero__buttons {
+        flex-direction: column;
+      } 
+      
+
+}
+
+@include for-Medium-devices {
+    .mobile{
+        display: block !important;
+
+        .hero__icons {
+          gap: 10px;
+            .box {
+                width: 33% !important;
+            }
+        
+    }
+    }
+}
+
+
+
+
+@include for-Large-devices {
+    .mobile{
+        display: block !important;
+
+        .hero__icons {
+            gap: 20px;
+              .box {
+                  width: 33% !important;
+              }
+          
+      }
+    }
+}
+
+
+@include for-Extra-Large-devices{
+    .mobile{
+        display: block !important;
+
+        .hero__icons {
+            gap: 30px;
+              .box {
+                  width: 33% !important;
+              }
+          
+      }
+    }
+}
+
+
+
+
+@include for-ExtraExtraLarge-devices {
+    .mobile{
+        display: block !important;
+
+        .hero__icons {
+            gap: 40px;
+              .box {
+                  width: 33% !important;
+              }
+          
+      }
+    }
+}
+

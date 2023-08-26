@@ -1,0 +1,45 @@
+{
+  "name": "off-road-zakopane",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "preview-email": "email dev"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@react-email/link": "0.0.5",
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.10.5",
+    "bootstrap-scss": "^5.3.1",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.13",
+    "next": "13.4.13",
+    "react": "^18.2.0",
+    "react-bootstrap-icons": "^1.10.3",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-photo-album": "^2.3.0",
+    "sass": "^1.66.1",
+    "sharp": "^0.32.5",
+    "yet-another-react-lightbox": "^3.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "typescript": "^5.1.6"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false,
+    "net": false,
+    "dns": false,
+    "child_process": false,
+    "tls": false
+  }
+}
