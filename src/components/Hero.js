@@ -7,16 +7,6 @@ import Driver from "../../public/driver.png";
 import Mechanical from "../../public/mechanical.png";
 import Jeeps from "../../public/jeeps.png";
 
-const handleScrollToElement = (elementId) => {
-  const element = document.getElementById(elementId);
-  if (element) {
-    window.scrollTo({
-      top: element.offsetTop,
-      behavior: "smooth",
-    });
-  }
-};
-
 export const Hero = () => {
   return (
     <div className="hero">
@@ -28,20 +18,12 @@ export const Hero = () => {
           plenerach?
         </p>
         <div className="hero__buttons">
-          <Link
-            href="#"
-            className="btn btn--red"
-            onClick={() => handleScrollToElement("offer")}
-          >
+          <a href="#offer" className="btn btn--red">
             WYKUP OFF ROAD
-          </Link>
-          <Link
-            href="#"
-            className="btn btn--white"
-            onClick={() => handleScrollToElement("contact")}
-          >
+          </a>
+          <a href="#contact" className="btn btn--white">
             KONTAKT
-          </Link>
+          </a>
         </div>
       </div>
 

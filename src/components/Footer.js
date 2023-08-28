@@ -52,16 +52,6 @@ const Footer = () => {
     );
   };
 
-  const handleScrollToElement = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <footer>
       <div className="container">
@@ -87,27 +77,16 @@ const Footer = () => {
             <h5>OFF ROAD ZAKOPANE</h5>
             <ul>
               <li>
-                <Link href="#" onClick={() => handleScrollToElement("about")}>
-                  O NAS
-                </Link>
+                <a href="#about">O NAS</a>
               </li>
               <li>
-                <Link
-                  href="/"
-                  onClick={() => handleScrollToElement("advantages")}
-                >
-                  DLACZEGO WARTO
-                </Link>
+                <a href="#advantages">DLACZEGO WARTO</a>
               </li>
               <li>
-                <Link href="#" onClick={() => handleScrollToElement("offer")}>
-                  OFERTA
-                </Link>
+                <a href="#offer">OFERTA</a>
               </li>
               <li>
-                <Link href="#" onClick={() => handleScrollToElement("contact")}>
-                  KONTAKT
-                </Link>
+                <a href="#contact">KONTAKT</a>
               </li>
             </ul>
           </div>
