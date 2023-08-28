@@ -24,6 +24,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href={favicon} />
+        <title>OFF ROAD ZAKOPANE</title>
+        <meta
+          name="description"
+          content="Off Road w sercu Podhala. Nasza pasja  - Off Road łączy się z urokiem niezwykłego regionu Podhala i majestatycznych Tatr. Jesteśmy twoim przewodnikiem po dzikich ścieżkach, które ukazują piękno górskiej natury i góralskiej kultury. "
+        />
+        <meta
+          name="keywords"
+          content="Off Road, Zakopane, Podhale, jazda terenowa"
+        />
       </head>
       <body>
         <Header />

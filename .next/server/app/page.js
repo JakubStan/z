@@ -1471,11 +1471,24 @@ function RootLayout({ children }) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("html", {
         lang: "en",
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("head", {
-                children: /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                    rel: "icon",
-                    href: favicon
-                })
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("head", {
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("link", {
+                        rel: "icon",
+                        href: favicon
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("title", {
+                        children: "OFF ROAD ZAKOPANE"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                        name: "description",
+                        content: "Off Road w sercu Podhala. Nasza pasja  - Off Road łączy się z urokiem niezwykłego regionu Podhala i majestatycznych Tatr. Jesteśmy twoim przewodnikiem po dzikich ścieżkach, kt\xf3re ukazują piękno g\xf3rskiej natury i g\xf3ralskiej kultury. "
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                        name: "keywords",
+                        content: "Off Road, Zakopane, Podhale, jazda terenowa"
+                    })
+                ]
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("body", {
                 children: [
