@@ -244,7 +244,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 8065:
+/***/ 9477:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -278,7 +278,7 @@ const tree = {
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1857)), "C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia\\src\\app\\page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1857)), "C:\\Users\\ASUS\\Desktop\\loga i strona www\\a\\src\\app\\page.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3881))).default(props))],
     apple: [],
@@ -289,7 +289,7 @@ const tree = {
         }]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2911)), "C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia\\src\\app\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2911)), "C:\\Users\\ASUS\\Desktop\\loga i strona www\\a\\src\\app\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3881))).default(props))],
     apple: [],
@@ -300,7 +300,7 @@ const tree = {
         }
       ]
       }.children;
-const pages = ["C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia\\src\\app\\page.js"];
+const pages = ["C:\\Users\\ASUS\\Desktop\\loga i strona www\\a\\src\\app\\page.js"];
 
 // @ts-expect-error - replaced by webpack/turbopack loader
 
@@ -332,35 +332,35 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 4205:
+/***/ 1474:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23))
 
 /***/ }),
 
-/***/ 2363:
+/***/ 5358:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3127));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8968));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3127));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6189))
 
 /***/ }),
 
-/***/ 111:
+/***/ 715:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5143))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2420))
 
 /***/ }),
 
-/***/ 5143:
+/***/ 2420:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -459,15 +459,6 @@ const Header = ()=>{
     const backgroundColor = scrolled ? "#110303" : "transparent";
     const borderBottom = scrolled ? "1px solid #fd0200" : "none";
     const transitionDuration = "0.8s";
-    const handleScrollToElement = (elementId)=>{
-        const element = document.getElementById(elementId);
-        if (element) {
-            window.scrollTo({
-                top: element.offsetTop,
-                behavior: "smooth"
-            });
-        }
-    };
     return /*#__PURE__*/ jsx_runtime_.jsx("header", {
         style: {
             backgroundColor: backgroundColor,
@@ -508,37 +499,33 @@ const Header = ()=>{
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                     className: "nav-item",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                         className: "nav-link",
-                                        href: "#",
-                                        onClick: ()=>handleScrollToElement("about"),
+                                        href: "#about",
                                         children: "O NAS"
                                     })
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                     className: "nav-item",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                         className: "nav-link",
-                                        href: "#",
-                                        onClick: ()=>handleScrollToElement("advantages"),
+                                        href: "#advantages",
                                         children: "DLACZEGO WARTO"
                                     })
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                     className: "nav-item",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                         className: "nav-link",
-                                        href: "#",
-                                        onClick: ()=>handleScrollToElement("offer"),
+                                        href: "#offer",
                                         children: "OFERTA"
                                     })
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                     className: "nav-item",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                         className: "nav-link",
-                                        href: "#",
-                                        onClick: ()=>handleScrollToElement("contact"),
+                                        href: "#contact",
                                         children: "KONTAKT"
                                     })
                                 })
@@ -1468,8 +1455,11 @@ const Contact = ()=>{
 
 
 
+;// CONCATENATED MODULE: ./src/app/favicon.ico
+/* harmony default export */ const favicon = ({"src":"/_next/static/media/favicon.3c36ae9d.ico","height":16,"width":16,"blurWidth":0,"blurHeight":0});
 ;// CONCATENATED MODULE: ./src/app/layout.js
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
 
 
 
@@ -1478,23 +1468,31 @@ function RootLayout({ children }) {
     (0,react_.useEffect)(()=>{
         __webpack_require__(4185);
     }, []);
-    return /*#__PURE__*/ jsx_runtime_.jsx("html", {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("html", {
         lang: "en",
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("body", {
-            children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(components_Header, {}),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("main", {
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx(components_Hero, {}),
-                        /*#__PURE__*/ jsx_runtime_.jsx(components_About, {}),
-                        /*#__PURE__*/ jsx_runtime_.jsx(components_Advantages, {}),
-                        /*#__PURE__*/ jsx_runtime_.jsx(components_Offer, {}),
-                        /*#__PURE__*/ jsx_runtime_.jsx(contact, {})
-                    ]
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(components_Footer, {})
-            ]
-        })
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("head", {
+                children: /*#__PURE__*/ jsx_runtime_.jsx("link", {
+                    rel: "icon",
+                    href: favicon
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("body", {
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx(components_Header, {}),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("main", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(components_Hero, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(components_About, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(components_Advantages, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(components_Offer, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(contact, {})
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx(components_Footer, {})
+                ]
+            })
+        ]
     });
 }
 
@@ -1513,7 +1511,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`C:\Users\ASUS\Desktop\loga i strona www\kopia\src\app\layout.js`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`C:\Users\ASUS\Desktop\loga i strona www\a\src\app\layout.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -1722,7 +1720,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,329], () => (__webpack_exec__(8065)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,329], () => (__webpack_exec__(9477)));
 module.exports = __webpack_exports__;
 
 })();

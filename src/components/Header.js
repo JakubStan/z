@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+
 import Image from "next/image";
 
 import Logo from "../../public/logo.png";
@@ -67,16 +68,6 @@ export const Header = () => {
   const borderBottom = scrolled ? "1px solid #fd0200" : "none";
   const transitionDuration = "0.8s";
 
-  const handleScrollToElement = (elementId) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <header
       style={{
@@ -106,43 +97,27 @@ export const Header = () => {
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  href="#"
-                  onClick={() => handleScrollToElement("about")}
-                >
+                <a className="nav-link" href="#about">
                   O NAS
-                </Link>
+                </a>
               </li>
 
               <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  href="#"
-                  onClick={() => handleScrollToElement("advantages")}
-                >
+                <a className="nav-link" href="#advantages">
                   DLACZEGO WARTO
-                </Link>
+                </a>
               </li>
 
               <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  href="#"
-                  onClick={() => handleScrollToElement("offer")}
-                >
+                <a className="nav-link" href="#offer">
                   OFERTA
-                </Link>
+                </a>
               </li>
 
               <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  href="#"
-                  onClick={() => handleScrollToElement("contact")}
-                >
+                <a className="nav-link" href="#contact">
                   KONTAKT
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

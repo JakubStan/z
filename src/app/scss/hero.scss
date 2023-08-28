@@ -117,6 +117,10 @@
     .hero__buttons {
         flex-direction: column;
       } 
+
+      .hero__content{
+        bottom: 10px;
+      }
       
 
 }
@@ -133,6 +137,11 @@
         
     }
     }
+
+    .hero__content{
+        bottom: 10px;
+      }
+      
 }
 
 

@@ -6024,13 +6024,13 @@ function createProxy(moduleId) {
 
 /***/ }),
 
-/***/ 4663:
+/***/ 8225:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy } = __webpack_require__(1363);
-module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia\\node_modules\\next\\dist\\client\\components\\app-router.js");
+module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\a\\node_modules\\next\\dist\\client\\components\\app-router.js");
  //# sourceMappingURL=app-router.js.map
 
 
@@ -6042,7 +6042,7 @@ module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy } = __webpack_require__(1363);
-module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia\\node_modules\\next\\dist\\client\\components\\error-boundary.js");
+module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\a\\node_modules\\next\\dist\\client\\components\\error-boundary.js");
  //# sourceMappingURL=error-boundary.js.map
 
 
@@ -6054,7 +6054,7 @@ module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy } = __webpack_require__(1363);
-module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia\\node_modules\\next\\dist\\client\\components\\layout-router.js");
+module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\a\\node_modules\\next\\dist\\client\\components\\layout-router.js");
  //# sourceMappingURL=layout-router.js.map
 
 
@@ -6066,7 +6066,7 @@ module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy } = __webpack_require__(1363);
-module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js");
+module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\a\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js");
  //# sourceMappingURL=render-from-template-context.js.map
 
 
@@ -6114,7 +6114,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy } = __webpack_require__(1363);
-module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js");
+module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\a\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js");
  //# sourceMappingURL=static-generation-searchparams-bailout-provider.js.map
 
 
@@ -6126,7 +6126,7 @@ module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy } = __webpack_require__(1363);
-module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\kopia\\node_modules\\next\\dist\\client\\image-component.js");
+module.exports = createProxy("C:\\Users\\ASUS\\Desktop\\loga i strona www\\a\\node_modules\\next\\dist\\client\\image-component.js");
  //# sourceMappingURL=image-component.js.map
 
 
@@ -8654,7 +8654,7 @@ _export(exports, {
         return StaticGenerationSearchParamsBailoutProvider;
     }
 });
-const { default: AppRouter } = __webpack_require__(4663);
+const { default: AppRouter } = __webpack_require__(8225);
 const { default: LayoutRouter } = __webpack_require__(7149);
 const { default: RenderFromTemplateContext } = __webpack_require__(9278);
 const { staticGenerationAsyncStorage } = __webpack_require__(3539);

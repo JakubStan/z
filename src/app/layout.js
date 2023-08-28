@@ -13,6 +13,8 @@ import {
   Offer,
 } from "../components";
 
+import favicon from "./favicon.ico";
+
 export default function RootLayout({ children }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -20,6 +22,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href={favicon} />
+      </head>
       <body>
         <Header />
 
