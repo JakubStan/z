@@ -343,13 +343,13 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_
 
 /***/ }),
 
-/***/ 5358:
+/***/ 3838:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8968));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3127));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6189))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6189));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3127))
 
 /***/ }),
 
@@ -554,15 +554,6 @@ var jeeps = __webpack_require__(6189);
 
 
 
-const handleScrollToElement = (elementId)=>{
-    const element = document.getElementById(elementId);
-    if (element) {
-        window.scrollTo({
-            top: element.offsetTop,
-            behavior: "smooth"
-        });
-    }
-};
 const Hero = ()=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: "hero",
@@ -582,16 +573,14 @@ const Hero = ()=>{
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: "hero__buttons",
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                href: "#",
+                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                href: "#offer",
                                 className: "btn btn--red",
-                                onClick: ()=>handleScrollToElement("offer"),
                                 children: "WYKUP OFF ROAD"
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                href: "#",
+                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                href: "#contact",
                                 className: "btn btn--white",
-                                onClick: ()=>handleScrollToElement("contact"),
                                 children: "KONTAKT"
                             })
                         ]
@@ -880,15 +869,6 @@ const Footer = ()=>{
             ]
         });
     };
-    const handleScrollToElement = (elementId)=>{
-        const element = document.getElementById(elementId);
-        if (element) {
-            window.scrollTo({
-                top: element.offsetTop,
-                behavior: "smooth"
-            });
-        }
-    };
     return /*#__PURE__*/ jsx_runtime_.jsx("footer", {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: "container",
@@ -939,30 +919,26 @@ const Footer = ()=>{
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                                href: "#",
-                                                onClick: ()=>handleScrollToElement("about"),
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                href: "#about",
                                                 children: "O NAS"
                                             })
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                                href: "/",
-                                                onClick: ()=>handleScrollToElement("advantages"),
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                href: "#advantages",
                                                 children: "DLACZEGO WARTO"
                                             })
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                                href: "#",
-                                                onClick: ()=>handleScrollToElement("offer"),
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                href: "#offer",
                                                 children: "OFERTA"
                                             })
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                                href: "#",
-                                                onClick: ()=>handleScrollToElement("contact"),
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                href: "#contact",
                                                 children: "KONTAKT"
                                             })
                                         })
@@ -1487,6 +1463,10 @@ function RootLayout({ children }) {
                     /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                         name: "keywords",
                         content: "Off Road, Zakopane, Podhale, jazda terenowa"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                        property: "og:image",
+                        content: "./og-image.png"
                     })
                 ]
             }),

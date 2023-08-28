@@ -33,6 +33,8 @@ export default function RootLayout({ children }) {
           name="keywords"
           content="Off Road, Zakopane, Podhale, jazda terenowa"
         />
+
+        <meta property="og:image" content="./og-image.png" />
       </head>
       <body>
         <Header />
