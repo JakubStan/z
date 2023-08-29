@@ -31,7 +31,7 @@ export const Hero = () => {
         <div className="hero__icons  container">
           <div className="hero-icon box">
             <Image src={Driver} alt="Kierowcy" />
-            <h3>Doświadczeni kierowcy</h3>
+            <h3>Kierowcy</h3>
             <p>
               Nasi kierowcy to doświadczeni pasjonaci z którymi możesz czuć się
               całkowicie bezpiecznie

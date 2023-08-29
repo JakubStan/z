@@ -600,7 +600,7 @@ const Hero = ()=>{
                                     alt: "Kierowcy"
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                    children: "Doświadczeni kierowcy"
+                                    children: "Kierowcy"
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                     children: "Nasi kierowcy to doświadczeni pasjonaci z kt\xf3rymi możesz czuć się całkowicie bezpiecznie"
